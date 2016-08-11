@@ -1,0 +1,78 @@
+﻿@model BaseCMS.Models.Login
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<title>Login</title>
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<div id="login-div" style="padding: 100px 0; text-align: center;">
+    @Html.ValidationSummary(true)
+
+    @using (Html.BeginForm())
+    {
+        <table style="margin: auto; direction: rtl;" class="group">
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.UserName)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "k-textbox" })
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Password)
+                </td>
+                <td>
+                    @Html.PasswordFor(m => m.Password, new { @class = "k-textbox" })
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.Password)
+                </td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    @Html.Hidden("ReturnUrl")
+                    @Html.AntiForgeryToken()
+                </td>
+                <td></td>
+            </tr>
+            <tr style="direction: ltr;">
+                <td colspan="3" style="padding: 20px;">
+                    <span id="Login" class="ANextIcon" style="padding: 10px;">
+                        <span></span>
+                        <span style="font-family: BYekan; font-size: medium">ورود</span>
+                    </span>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    }
+</div>
+<script>
+    $("#Login").on("click", function () {
+        $("form:first").submit();
+    });
+
+
+
+    $(document).keypress(function (e) {
+        if (e.which == 13) {
+            $("form:first").submit();
+        }
+    });
+
+
+
+</script>
+

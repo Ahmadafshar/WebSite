@@ -1,0 +1,113 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*------------------------- custom -------------*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('awsome/fontawesome-webfont.eot?v=3.2.1');
+    src: url('awsome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('awsome/fontawesome-webfont.woff') format('woff'), url('awsome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('awsome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.NextIcon {
+    color: #2eb3a6;
+    background-color: transparent;
+    font-family: FontAwesome;
+    font-size: larger;
+    padding: 3px 4px 3px 4px;
+    border: #2eb3a6 solid 1px;
+    /*margin: 10px 15px 10px 0;*/
+    line-height: 30px;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: all .1s;
+    -ms-transition: all .1s;
+    -o-transition: all .1s;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    /* Safari */
+}
+
+.NextIcon:hover {
+        background-color: #2eb3a6;
+        color: #63656a;
+    }
+
+.group {
+    margin: 4.5em auto;
+    padding: 3em;
+    border: 1px solid rgba(20, 53, 80, 0.05);
+    background-color: #FEFEFE;
+    border-color: #FEFEFE;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-weight: normal;
+}

@@ -1,0 +1,78 @@
+﻿.ANextIcon {
+    color: #2eb3a6;
+    background-color: transparent;
+    font-family: FontAwesome;
+    font-size: larger;
+    padding: 3px 4px 3px 4px;
+    border: #2eb3a6 solid 1px;
+    /*margin: 10px 15px 10px 0;*/
+    line-height: 30px;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-animation: breathing 7s ease-out infinite normal;
+    -moz-animation: breathing 7s ease-out infinite normal;
+    -ms-animation: breathing 7s ease-out infinite normal;
+    -o-animation: breathing 7s ease-out infinite normal;
+    animation: breathing 7s ease-out infinite normal;
+}
+
+    .ANextIcon:hover {
+        background-color: #2eb3a6;
+        color: #63656a;
+    }
+
+
+
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}

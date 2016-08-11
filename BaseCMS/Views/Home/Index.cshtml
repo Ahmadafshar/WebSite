@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Request.IsAuthenticated)
+{
+    <span style="font-family: BYekan; font-size: medium; margin-right: 14px;">Wellcome @User.Identity.Name</span>
+    using (Html.BeginForm("Logout", "Users", FormMethod.Post, new { id = "logoutForm" }))
+    {
+        @Html.AntiForgeryToken()
+    }
+
+    <a id="MenuItemExit" class="MenuItem8" href="#" style="border-color: #d544f6; ">Exit</a>
+
+}
+
+
+<script src="~/Scripts/kendo/kendo.all.min.js"></script>
+
+<script>
+    $("#MenuItemExit").on("click", function () {
+        document.getElementById('logoutForm').submit();
+    });
+</script>
